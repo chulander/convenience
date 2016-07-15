@@ -1,7 +1,7 @@
 {
-  "name": "convenience",
+  "name": "de-promisify",
   "version": "0.0.1",
-  "description": "at your convenience",
+  "description": "de-promisifies and unwraps a Promise into a callback",
   "main": "index.js",
   "scripts": {
     "test": "mocha test ./test/test_spec.js",
@@ -9,15 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chulander/convenience.git"
+    "url": "git+https://github.com/chulander/de-promisify.git"
   },
   "author": "chulander",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chulander/convenience/issues"
+    "url": "https://github.com/chulander/de-promisify/issues"
   },
-  "homepage": "https://github.com/chulander/convenience#readme",
+  "homepage": "https://github.com/chulander/de-promisify#readme",
   "devDependencies": {
+    "bluebird": "^3.4.1",
     "chai": "^3.5.0",
     "mocha": "^2.5.3"
   }
