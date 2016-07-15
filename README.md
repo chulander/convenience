@@ -9,7 +9,7 @@ $ npm i de-promisify
 ```
 ### Usage
 ```javascript
-/*
+/* quick sample below /*
 const readFileAsync = bluebird.promisify(fs.readFile);
 const testAsync = de_promisify(readFileAsync);
 
@@ -17,7 +17,7 @@ testAsync(path.resolve(__dirname, './sample.txt'), 'utf8', function (err, data){
     if(err) done(err);
     else(data === successData) ? done() : done(new Error('text is not the same'))
 })
-*/
+
 ### Testing
 ```sh
 $ npm i promisie
