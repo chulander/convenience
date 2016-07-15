@@ -1,5 +1,5 @@
 # de-promisify
-we all like the convenience of using Promises yet once in a while a function still needs to accept a callback; hence this tiny function simply de-promisifies and unwraps a Promise back to the good 'ol callback that we've grown to love.
+we all enjoy the convenience of Promises, yet once in a while we come across an asynchronous function that still requires an error-first callback; hence this module aims to solve that omg-headache by simply unwrapping a Promise back to the good 'ol callback days of our youth.
 ### Version
 0.0.1
 ### Installation
@@ -14,8 +14,8 @@ Just pass in the Promise as an argument
 */
 const testAsync = de_promisify(readFileAsync);
 testAsync(path.resolve(__dirname, './sample.txt'), 'utf8', function (err, data){
-    if(err) done(err);
-    else(data === successData) ? done() : done(new Error('text is not the same'))
+    if(err) handleError(err);
+    else handleSuccess(data);
 })
 
 
