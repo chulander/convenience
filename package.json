@@ -1,0 +1,24 @@
+{
+  "name": "convenience",
+  "version": "0.0.1",
+  "description": "at your convenience",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test ./test/test_spec.js",
+    "start": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chulander/convenience.git"
+  },
+  "author": "chulander",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chulander/convenience/issues"
+  },
+  "homepage": "https://github.com/chulander/convenience#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}
