@@ -1,7 +1,7 @@
 {
   "name": "de-promisify",
   "version": "0.0.1",
-  "description": "de-promisifies and unwraps a Promise into a callback",
+  "description": "unwraps a Promise into an error-first callback",
   "main": "index.js",
   "scripts": {
     "test": "mocha test ./test/test_spec.js",
