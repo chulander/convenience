@@ -3,28 +3,36 @@ we all like the convenience of using Promises yet once in a while a function sti
 ### Version
 0.0.1
 ### Installation
-must be running Node v4.2.4 or above
+Native Promises were available starting with Node v4.2.4, therefore, you must use that or greater
 ```sh
 $ npm i de-promisify
 ```
 ### Usage
 ```javascript
-/* quick sample below /*
-const readFileAsync = bluebird.promisify(fs.readFile);
+/*
+Just pass in the Promise as an argument
+*/
 const testAsync = de_promisify(readFileAsync);
-
 testAsync(path.resolve(__dirname, './sample.txt'), 'utf8', function (err, data){
     if(err) done(err);
     else(data === successData) ? done() : done(new Error('text is not the same'))
 })
 
+
+```
 ### Testing
 ```sh
-$ npm i promisie
-$ cd ./node_modules/promisie
+$ npm i de-promisify
+$ cd ./node_modules/de-promisify
 $ npm i
 $ npm test
 ```
+
+License
+----
+
+MIT
+
 
 License
 ----
