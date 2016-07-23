@@ -1,7 +1,9 @@
 # de-promisify
-we all enjoy the convenience of ES6 / A+ Promises, yet once in a while we come across a library in the stack that still requires an error-first callback; hence this "de-promisify" module aims to solve that omg-headache by simply unwrapping an ES6 /  A+ Promise to the good 'ol callback days of our youth.
+we all enjoy the convenience of ES6 / A+ Promises; yet once in a while, an asynchronous function in our stack still requires a callback.
+
+This "de-promisify" module aims to solve that omg-headache by simply unwrapping an ES6 /  A+ Promise into the good 'ol error-first callback days of our youth.
 ### Version
-0.0.3
+0.0.4
 ### Installation
 Native ES6 Promises is required therefore Node v4.2.4+
 ```sh
