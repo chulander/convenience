@@ -1,6 +1,6 @@
 {
   "name": "de-promisify",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "unwraps a Promise into an error-first callback",
   "main": "index.js",
   "scripts": {
